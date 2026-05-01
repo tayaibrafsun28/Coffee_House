@@ -10,7 +10,9 @@
 
     <!-- Font Awesome -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +22,129 @@
         rel="stylesheet">
 
     <!-- Style -->
-     <style>
-        *{
+    <style>
+        * {
             font-family: "Kanit", sans-serif;
         }
-     </style>
+
+        .secondary-color {
+            color: #bea271;
+        }
+
+        .secondary-bg {
+            background-color: #bea271;
+        }
+    </style>
     <title>Coffee House</title>
 
 </head>
 
 <body>
+    <!-- navbar -->
 
+    <nav class="max-w-4/5 mx-auto flex justify-between items-center py-4">
+        <div class="logo">
+            <img src="./images/logo_black.png" alt="">
+        </div>
+
+        <div class="nav-links">
+            <ul class="flex space-x-6 font-normal text-xl [&>li>a:hover]:text-[#bea271]">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li class="login-btn">
+                    <a href="">
+                        <i class="fa-regular fa-circle-user" style="color: rgb(0, 0, 0); font-size: 25px;"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <!-- main -->
+
+    <main>
+
+        <!-- Hero Section -->
+
+        <div class="hero bg-[url(./images/hero-bg.jpg)] bg-no-repeat bg-center bg-cover py-35 my-25">
+            <div class="max-w-4/5 h-4/5 mx-auto space-y-5 flex flex-col justify-center">
+                <h1 class="text-8xl leading-30 font-bold">Espresso bar<br><span class="secondary-color">coffee
+                        news</span></h1>
+                <p class="text-2xl">Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id <br>vehicula odio.
+                    Donec pulvinar
+                    tellus eget magna aliquet ultricies.
+                </p>
+                <div class="buttons flex gap-10 font-bold">
+                    <div class="read-btn bg-black text-white px-12 py-3 rounded">
+                        Read more
+                    </div>
+                    <div class="view-product-btn secondary-bg text-white px-12 py-3 rounded">
+                        View Products
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Market -->
+
+        <div class="wrapper bg-[#242424]">
+            <div
+                class="max-w-4/5 mx-auto py-25 bg-[url(./images/beans-2.png)] bg-no-repeat bg-left bg-contain flex items-center gap-30">
+                <div class="left flex-1 space-y-10">
+                    <h1 class="text-7xl text-white font-bold">About market</h1>
+                    <p class="text-3xl secondary-color font-light tracking-wider">
+                        Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio.
+                        Donec pulvinar tellus eget magna aliquet ultricies. Praesent gravida hendrerit ex, nec
+                        eleifend
+                        sem convallis vitae.
+                    </p>
+                </div>
+
+                <div class="right flex-1 grid grid-cols-2 gap-20">
+                    <div id="about-card">
+                        <img src="./images/about-icon-1.png" alt="">
+                        <h2 class="text-white text-3xl pt-5 pb-2">The best World sorts</h2>
+                        <p class="text-white font-extralight">Sed sagittis sodales lobortis. Curabitur in eleifend
+                            turpis, id vehicula
+                            odio. Donec pulvinar
+                            tellus eget magna aliquet ultricies.</p>
+                    </div>
+                    <div id="about-card">
+                        <img src="./images/about-icon-2.png" alt="">
+                        <h2 class="text-white text-3xl pt-5 pb-2">The best World sorts</h2>
+                        <p class="text-white font-extralight">Sed sagittis sodales lobortis. Curabitur in eleifend
+                            turpis, id vehicula
+                            odio. Donec pulvinar
+                            tellus eget magna aliquet ultricies.</p>
+                    </div>
+                    <div id="about-card">
+                        <img src="./images/about-icon-3.png" alt="">
+                        <h2 class="text-white text-3xl pt-5 pb-2">The best World sorts</h2>
+                        <p class="text-white font-extralight">Sed sagittis sodales lobortis. Curabitur in eleifend
+                            turpis, id vehicula
+                            odio. Donec pulvinar
+                            tellus eget magna aliquet ultricies.</p>
+                    </div>
+                    <div id="about-card">
+                        <img src="./images/about-icon-4.png" alt="">
+                        <h2 class="text-white text-3xl pt-5 pb-2">The best World sorts</h2>
+                        <p class="text-white font-extralight">Sed sagittis sodales lobortis. Curabitur in eleifend
+                            turpis, id vehicula
+                            odio. Donec pulvinar
+                            tellus eget magna aliquet ultricies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
 </body>
 
 </html>
