@@ -27,6 +27,14 @@
             font-family: "Kanit", sans-serif;
         }
 
+        .primary-color {
+            color: #242424;
+        }
+
+        .primary-bg {
+            background-color: #242424;
+        }
+
         .secondary-color {
             color: #bea271;
         }
@@ -44,6 +52,7 @@
 </head>
 
 <body>
+
     <!-- navbar -->
 
     <nav class="max-w-4/5 mx-auto flex justify-between items-center py-4">
@@ -100,7 +109,7 @@
         <!-- About Market -->
 
         <section class="about-section">
-            <div class="wrapper bg-[#242424]">
+            <div class="wrapper primary-bg">
                 <div
                     class="max-w-4/5 mx-auto py-25 bg-[url(./images/beans-2.png)] bg-no-repeat bg-left bg-contain flex items-center gap-30">
                     <div class="left flex-1 space-y-10">
@@ -407,6 +416,51 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+
+    <footer class="primary-bg ">
+        <div class="wrapper bg-[url(./images/footer_map.png)] bg-no-repeat bg-center text-white">
+            <div class="main-footer max-w-4/5 mx-auto py-25 grid grid-cols-3 gap-20">
+
+                <div class="business-details">
+                    <img src="./images/logo_white.png" alt="">
+                    <p class="mt-5">Pellentesque congue non augue vitae pellentesque. Morbi sollicitudin eleifend
+                        rhoncus. Mauris vel nisl a massa viverra sollicitudin semper a diam.</p>
+                </div>
+
+                <div class="links-list">
+                    <h1 class="text-4xl font-bold secondary-color">Explore</h1>
+                    <div class="grid grid-cols-2 mt-7 [&_li:hover]:text-[#bea271]">
+                        <ul class="space-y-3 ">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">About Us</a></li>
+                        </ul>
+
+                        <ul class="space-y-3">
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href=""></a>Gallery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="links-list">
+                    <h1 class="text-4xl font-bold secondary-color">Address</h1>
+                    <p class="mt-5">7,8 Gurudas Sarkar Lane, <br> Narinda, Dhaka - 1100</p>
+                </div>
+            </div>
+
+            <div class="sub-footer bg-[#191919] py-3.5">
+                <h1 class="text-center text-lg">Tayaib Rafsun &copy All Rights Reserved - 2026</h1>
+            </div>
+
+        </div>
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
